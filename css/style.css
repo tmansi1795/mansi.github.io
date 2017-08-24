@@ -555,8 +555,6 @@ section#intro {
 }
 
 
-
-
 /* Carousel Header Styles */
 
 .header-text {
@@ -654,6 +652,7 @@ section#intro {
     width: 25%;
     float: left;
 }
+
 
 /*
 .box-social .social-facebook a {
@@ -865,7 +864,44 @@ a.btn:focus {
     }
 }
 
+@media screen (max-width: 768px) {
+    .navbar-custom ul.nav li a {
+        color: black;
+    }
+}
+
 @media (max-width:768px) {
+    .header-text {
+        position: absolute;
+        top: 10%;
+        left: 1.8%;
+        right: auto;
+        width: 96.66666666666666%;
+        color: #fff;
+    }
+    .text-center {
+        font-size: 10px;
+    }
+    .header-text h2 {
+        font-size: 25px;
+    }
+    .header-text h3 {
+        margin: -40px;
+        font-size: 23px;
+    }
+    .navHeader {
+        display: inline-flex;
+        margin: 17px 0px 0px 0px;
+    }
+    .btn-theme {
+        border: 0px;
+        margin-right: 0px;
+    }
+    .btn-min-block {
+        min-width: 0px;
+        line-height: 26px;
+        margin: 10px;
+    }
     #navigation {
         padding: 20px 0;
     }
@@ -873,23 +909,17 @@ a.btn:focus {
         margin: 0 0 0 30px;
         float: none;
     }
-    .navbar-custom ul.nav li a {
-        color: #eee;
-    }
+    /*
     .navbar-custom ul.nav ul.dropdown-menu li {
         border-bottom: 1px solid #aaa;
     }
+*/
     .navbar-header {
         margin-top: -40px;
         padding: 0;
     }
     .navbar-header button {
         background: #111;
-    }
-    .navbar-header button.navbar-toggle {
-        padding: 4px 15px;
-        font-size: 14px;
-        color: #fff;
     }
     .navbar-custom .nav {
         background: #444;
@@ -899,12 +929,6 @@ a.btn:focus {
     }
     .team-wrap {
         margin-bottom: 30px;
-    }
-    form#contact-form {
-        margin-bottom: 50px;
-    }
-    .xs-marginbot-20 {
-        margin-bottom: 20px;
     }
 }
 
